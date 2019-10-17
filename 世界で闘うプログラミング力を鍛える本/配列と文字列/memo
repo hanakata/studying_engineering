@@ -1,0 +1,15 @@
+ハッシュテーブル
+非常に効率的な検索を行うためにキーを値にマップするデータ構造。
+ハッシュテーブルの実装方法はたくさんあるが一般的な実装は以下
+1.キーのハッシュ値を計算する。
+2.ハッシュ値を配列のインデックスに対応させる
+3.このインデックスの指す場所にキーと値の連結リストがある。
+
+言語によって配列は自動的にサイズが変わるが固定されているのもある。
+動的にサイズを変えることができる配列のようなデータ構造が必要な場合配列リストを利用する。
+ArrayList<String> merge(String[] words, String[] more){
+    ArrayList<String> sentence = new ArrayList<String>();
+    for(String w : words) sentence.add(w);
+    for(String w : more) sentence.add(w);
+    return sentence;
+}
